@@ -1,0 +1,88 @@
+{
+    "blackCommunity": {
+      "organizations": [
+        {
+          "name": "@BLM",
+          "handle": "@moo",
+          "description": "stuff"
+        },
+        {
+          "name": "#StopAsianHate",
+          "handle": "@moo",
+          "description": "stuff"
+        }
+      ],
+  
+      "books": [
+        {
+          "name": "BLMname1",
+          "description": "stuff"
+        },
+        {
+          "name": "BLMname2",
+  
+          "description": "stuff"
+        }
+      ],
+  
+      "podcast": [
+        {
+          "name": "BLMname1",
+          "description": "stuff"
+        },
+        {
+          "name": "BLMname1",
+  
+          "description": "stuff"
+        }
+      ]
+    },
+  
+    "AsianCommunity": {
+      "organizations": [
+        {
+          "name": "@ANZ",
+          "handle": "@moo",
+          "description": "stuff"
+        },
+        {
+          "name": "#StopAsianHate",
+          "handle": "@moo",
+          "description": "stuff"
+        }
+      ],
+  
+      "books": [
+        {
+          "name": "ANZname1",
+          "description": "stuff",
+          "price": 19.99,
+          "tags": ["antiHate", "reform", "best seller"],
+          "author": {
+            "name": "Josh",
+            "awards": "Best Seller",
+            "Race": "Asian",
+            "Major": "Comp Sci"
+          }
+        },
+        {
+          "name": "ANZname2",
+  
+          "description": "stuff",
+          "price": 19.99
+        }
+      ],
+  
+      "podcast": [
+        {
+          "name": "ANZname1",
+          "description": "stuff"
+        },
+        {
+          "name": "ANZname1",
+  
+          "description": "stuff"
+        }
+      ]
+    }
+  }
