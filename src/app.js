@@ -8,7 +8,7 @@ const { FileDb } = require('jovo-db-filedb');
 
 
 //------------------Import external intents--------------------------
-const DonationState = require('./intents/DonationState');
+const DonateTimeState = require('./states/DonatetimeState');
 
 
 
@@ -36,8 +36,13 @@ app.use(
 // test
 
 app.setHandler({
+  DonateTimeState,
   LAUNCH() {
     return this.toIntent('HelloWorldIntent');
+  },
+
+  DonateTimeIntent(){
+    this.toStateIntent("DonateTimeState", "DonateTimeIntent")
   },
 
   HelloWorldIntent() {
