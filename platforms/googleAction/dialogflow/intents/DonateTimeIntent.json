@@ -1,0 +1,5 @@
+{
+	"name": "DonateTimeIntent",
+	"auto": true,
+	"webhookUsed": true
+}

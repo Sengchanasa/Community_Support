@@ -16,11 +16,12 @@
       "books": [
         {
           "name": "BLMname1",
+          "author": "Author1",
           "description": "stuff"
         },
         {
           "name": "BLMname2",
-  
+          "author": "Author2",
           "description": "stuff"
         }
       ],
@@ -32,7 +33,17 @@
         },
         {
           "name": "BLMname1",
+          "description": "stuff"
+        }
+      ],
   
+      "movies": [
+        {
+          "name": "blackmovie1",
+          "description": "stuff"
+        },
+        {
+          "name": "blackmovie1",
           "description": "stuff"
         }
       ]
@@ -81,6 +92,17 @@
         {
           "name": "ANZname1",
   
+          "description": "stuff"
+        }
+      ],
+  
+      "movies": [
+        {
+          "name": "blackmovie1",
+          "description": "stuff"
+        },
+        {
+          "name": "blackmovie1",
           "description": "stuff"
         }
       ]
