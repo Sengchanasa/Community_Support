@@ -4,8 +4,8 @@
 
 
 		{
-      "name": "StoryState",
-      "phrases": ["StoryState"]
+      "name": "StoryIntent",
+      "phrases": ["StoryIntent"]
     },
 
 		{
