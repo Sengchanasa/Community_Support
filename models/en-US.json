@@ -4,8 +4,24 @@
 
 
 		{
+      "name": "StoryState",
+      "phrases": ["StoryState"]
+    },
+
+		{
+      "name": "LifestyleChangeIntent",
+      "phrases": ["LifestyleChangeIntent"]
+    },
+
+
+		{
       "name": "DonateTimeIntent",
       "phrases": ["DonateTimeIntent"]
+    },
+
+		{
+      "name": "DonateMoneyIntent",
+      "phrases": ["DonateMoneyIntent"]
     },
 
 
