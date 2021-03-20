@@ -36,8 +36,8 @@
     },
 
 		{
-      "name": "LifestyleChangeIntent",
-      "phrases": ["LifestyleChangeIntent {communityName}"],
+      "name": "DonateTimeIntent",
+      "phrases": ["DonateTimeIntent {communityName}"],
 			"inputs": [
 				{
 					"name": "communityName",
@@ -51,8 +51,17 @@
 
 
 		{
-      "name": "DonateTimeIntent",
-      "phrases": ["DonateTimeIntent"]
+      "name": "LifestyleChangeIntent",
+      "phrases": ["LifestyleChangeIntent {communityName}"],
+			"inputs": [
+				{
+					"name": "communityName",
+					"type": {
+						"alexa": "communityName",
+						"dialogflow": "communityName"
+					}
+				}
+			]
     },
 
 		{
