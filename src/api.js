@@ -41,3 +41,33 @@ console.log(getOrganization("blackCommunity"))
         return "[ " + ret + "]";
     }
 
+    //Gets all events that organization[organization] is in
+    function getOrganizationEvents(community, organization) {
+        let org = getOrganization(community, organization)
+        let ret = ""
+        for(i in org.events) {
+            ret = ret + org.events[i] + " ";
+        }
+        return "[ " + ret + "]";
+    }
+
+    //Gets community book Title
+    function getTitle(community, title) {
+        //console.log(JSON.stringify(title))
+        for(i in resources[community].books) {
+            if (resources[community].books[i].title==title) {
+                return resources[community].books[i];
+            }
+        }
+    }
+
+    //Gets all books for community
+    // function getAllCommunityBookTitles(community) {
+        
+    //     let ret = ""
+
+    //     for(i in resources[community].books) {
+    //         ret = ret + getTitle(community, resources[community].books[i].title) + " ";
+    //     }
+    //     return "[ " + ret + "]";
+    // }
