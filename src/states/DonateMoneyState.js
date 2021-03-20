@@ -1,3 +1,4 @@
+const { getAllOrganizations } = require("../api");
 
 module.exports = {
 
@@ -29,10 +30,13 @@ module.exports = {
     }
 
     this.$speech.addText(`You can help the ${communityName} by donating to one of the following`);
-    this.$speech.addText(["org1", "org2", "org3"]);
-      this.followUpState("DonateMoneyState.Confirmation");
+    //console.log(getAllOrganizations("asianCommunity"))
+    this.$speech.addText(getAllOrganizations(communityName));
     this.$speech.addText("Would you like to donate to an organization?")
-    
+    this.followUpState("DonateMoneyState.Confirmation");
+    this.$session.$data.previousState = this.getState();
+    this.$session.$data.previousIntent = "DonateMoneyIntent";
+    return this.ask(this.$speech);
   },
   Confirmation:{
 

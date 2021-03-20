@@ -29,7 +29,24 @@
 			]
 		},
 
-
+		{
+			"name": "OrganizationIntent",
+			"phrases": [
+				"{organizationName}",
+				"my name is {organizationName}",
+				"i am {organizationName}",
+				"you can call me {organizationName}"
+			],
+			"inputs": [
+				{
+					"name": "organizationName",
+					"type": {
+						"alexa": "organizationName",
+						"dialogflow": "organizationName"
+					}
+				}
+			]
+		},
 		{
       "name": "StoryIntent",
       "phrases": ["StoryIntent"]
