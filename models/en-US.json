@@ -2,7 +2,14 @@
 
 	"invocation": "my test app",
 	"intents": [
-
+		{
+      "name": "YesIntent",
+      "phrases": ["yes"]
+    },
+    {
+      "name": "NoIntent",
+      "phrases": ["no"]
+    },
 		{
 			"name": "CommunityIntent",
 			"phrases": [
@@ -30,7 +37,16 @@
 
 		{
       "name": "LifestyleChangeIntent",
-      "phrases": ["LifestyleChangeIntent"]
+      "phrases": ["LifestyleChangeIntent {communityName}"],
+			"inputs": [
+				{
+					"name": "communityName",
+					"type": {
+						"alexa": "communityName",
+						"dialogflow": "communityName"
+					}
+				}
+			]
     },
 
 

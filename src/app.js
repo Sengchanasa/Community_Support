@@ -47,7 +47,7 @@ app.setHandler({
   LifestyleChangeState,
   StoryState,
   LAUNCH() {
-    return this.toIntent('HelloWorldIntent');
+    return this.toIntent('WelcomeIntent');
   },
 
   WelcomeIntent(){
@@ -79,6 +79,7 @@ app.setHandler({
   MyNameIsIntent() {
     this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
   },
+
 });
 
 
