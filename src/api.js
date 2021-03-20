@@ -1,8 +1,8 @@
 const resources = require("./data/resources.json")
 console.log("hello world")
 
-console.log(getOrganizationEvent("blackCommunity", "org2"))
-    module.exports = {getOrganizationEvent}
+console.log(getAllOrganizationEvents("blackCommunity"))
+    module.exports = {getAllOrganizationEvents}
 
     //Gets organization name in database app currently supports
     function getOrganization(community, organization) {
@@ -11,6 +11,8 @@ console.log(getOrganizationEvent("blackCommunity", "org2"))
                 return resources[community].organizations[i];
             }
         }
+        //console.log("Cannot find event")
+        //console.log(community + "|"+ organizations)
     }
     
     //Gets all organizations in database app currently supports
@@ -41,19 +43,28 @@ console.log(getOrganizationEvent("blackCommunity", "org2"))
         return "[ " + ret + "]";
     }
 
-    //Gets all events that organization[organization] is in
+    //Gets events that organization[organization] is in
     function getOrganizationEvent(community, organization) { 
+        //console.log(JSON.stringify(getOrganization(community, organization)))
         return getOrganization(community, organization).events;
     }
 
     //Gets all events that organization[organization] is in
-    function getAllOrganizationEvents(community, organization) {
-        let org = getOrganization(community, organization)
-        let ret = ""
-        for(i in org.events) {
-            ret = ret + org.events[i] + " ";
+    function getAllOrganizationEvents(community) {
+        let hash = {}
+        let ret = []
+        for (l in resources[community].organizations) {
+            //console.log("here")
+            //console.log(JSON.stringify(resources[community].organizations[l].events))
+            for(i in resources[community].organizations[l].events) {
+                
+                //console.log(resources[community].organizations[l])
+                let event = getOrganizationEvent(community, resources[community].organizations[l].name)
+                ret.push(event)
+                hash[event.name] = event
+            }
         }
-        return "[ " + ret + "]";
+        return hash
     }
 
     //Gets community book Title
