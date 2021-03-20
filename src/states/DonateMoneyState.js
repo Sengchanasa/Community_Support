@@ -34,7 +34,7 @@ module.exports = {
       //Prompt for community name
 
 
-      return this.ask("Which community do you wish to donate to, BLM community or Asian community?")
+      return this.ask("Which community do you wish to donate to, black community or Asian community?")
 
     }
 

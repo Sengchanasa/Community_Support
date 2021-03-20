@@ -28,7 +28,7 @@ module.exports = {
       this.$session.$data.previousIntent = "DonateTimeIntent";
       //Prompt for community name
 
-      return this.ask("What is the name of the community you want to support, black or asian?")
+      return this.ask("What is the name of the community you want to support, black community or asian community?")
 
     }
 
