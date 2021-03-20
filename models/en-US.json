@@ -1,6 +1,26 @@
 {
+
 	"invocation": "my test app",
 	"intents": [
+
+		{
+			"name": "CommunityIntent",
+			"phrases": [
+				"{communityName}",
+				"my name is {communityName}",
+				"i am {communityName}",
+				"you can call me {communityName}"
+			],
+			"inputs": [
+				{
+					"name": "communityName",
+					"type": {
+						"alexa": "communityName",
+						"dialogflow": "communityName"
+					}
+				}
+			]
+		},
 
 
 		{
