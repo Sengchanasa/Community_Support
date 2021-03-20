@@ -44,7 +44,9 @@ module.exports = {
       console.log(JSON.stringify(this.$session.$data.communityName))
     }
 
-    this.$speech.addText(`You can help the ${communityName} by donating to one of the following`);
+    let community = input == "blackCommunity" ? "African American" : "Asian"
+
+    this.$speech.addText(`You can help the ${community} by donating to one of the following`);
     //console.log(getAllOrganizations("asianCommunity"))
     this.$speech.addText(getAllOrganizations(communityName));
     this.$speech.addText("Would you like to donate to an organization?")

@@ -1,11 +1,13 @@
 {
-    "blackCommunity": {
-        "organizations": [
+    "blackCommunity": 
+      {
+        "organizations": 
+        [
           {
-            "name": "Black Livs Matter",
-            "description": " BLM is a organization in US, UK, and Canada whose mission is to stop white supremacy and bring a community together to fight against the battle of injustice violence against Black communities.",
+            "name": "org1",
+            "description": "desc1",
             "handle": {
-              "twitter": "@twittername", 
+              "twitter": "@Blklivesmatter", 
               "linkedin": "@linkedin",
               "facebook": "@facebook"
             },
@@ -18,7 +20,7 @@
           },
 
           {
-            "name": "Black Alliance For Just Immigration",
+            "name": "org2",
             "description": "desc2",
             "handle": 
               {
@@ -28,15 +30,15 @@
               },
             "events": 
               {
-                "name": "Black Girls Code",
-                "description": " a mission to increase the number of black women working in computer programming. After school programs and workshops, the org plans to train one million young black women in the field by the year 2040",
+                "name": "eventname2",
+                "description": "eventdesc2",
                 "location": "location2"
               }
           },
 
           {
-            "name": "NAACP",
-            "description": " (National Association for the Advancement of Colored People) works to achieve racial justice for citizens in urban communities.",
+            "name": "org3",
+            "description": "desc3",
             "handle": 
               {
                 "twitter": "@twittername", 
@@ -96,49 +98,14 @@
     "asianCommunity": {
       "organizations": [
         {
-          "name": "Asian Americans Advancing Justice — Atlanta",
-          "description": " dedicated to protecting and advancing the civil rights of Asian Americans, Native Hawaiians, and Pacific Islanders (AANHPI) in Georgia and the Southeast. They help people resolve legal issues and organizes communities.",
-          "handle": {
-            "twitter": "@twittername", 
-            "linkedin": "@linkedin",
-            "facebook": "@facebook"
-          },
-          "events": 
-            {
-              "name": "eventname1",
-              "description": "eventdesc1",
-              "location": "location1"
-            }
+          "name": "@ANZ",
+          "handle": "@moo",
+          "description": "stuff"
         },
         {
-          "name": "Stop AAPI Hate",
-          "description": " formed in response to violence against Asian Americans during the COVID-19 pandemic. They tracks hate crimes, provides legal services to impacted communities, and advocates for civil rights. ",
-          "handle": {
-            "twitter": "@twittername", 
-            "linkedin": "@linkedin",
-            "facebook": "@facebook"
-          },
-          "events": 
-            {
-              "name": "eventname1",
-              "description": "eventdesc1",
-              "location": "location1"
-            }
-        },
-        {
-          "name": "Asian Mental Health Collective",
-          "description": " group is working to break down stigmas around mental health within the AAPI community.",
-          "handle": {
-            "twitter": "@twittername", 
-            "linkedin": "@linkedin",
-            "facebook": "@facebook"
-          },
-          "events": 
-            {
-              "name": "eventname1",
-              "description": "eventdesc1",
-              "location": "location1"
-            }
+          "name": "#StopAsianHate",
+          "handle": "@moo",
+          "description": "stuff"
         }
       ],
   
@@ -177,11 +144,11 @@
   
       "movies": [
         {
-          "name": "asianmovie1",
+          "name": "blackmovie1",
           "description": "stuff"
         },
         {
-          "name": "asianmovie1",
+          "name": "blackmovie1",
           "description": "stuff"
         }
       ]

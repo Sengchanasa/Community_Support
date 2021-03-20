@@ -30,9 +30,9 @@ module.exports = {
 
     }
 
-   
+    let community = input == "blackCommunity" ? "African American" : "Asian"
 
-    this.$speech.addText(`You can to help the ${communityName} by `);
+    this.$speech.addText(`You can to help the ${community} by `);
     this.$speech.addText(["reading more books about that community", "teaching your children about races", "getting to know more about people in that community"]);
       this.followUpState("LifestyleChangeState.Confirmation");
     this.$speech.addText("Would you like to donate to an organization?")

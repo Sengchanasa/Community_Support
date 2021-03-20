@@ -87,6 +87,18 @@ app.setHandler({
     this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
   },
 
+  CurrentEventIntent() {
+    this.$session.$data.communityName = 'asianCommunity';
+    this.$speech.addText("This is what's going on recently in Asian community.")
+    this.$speech.addText(['On this lunar new year, several Asian restaurants in Howard County were looted and  burglarized. This is a coward act of racism against the Asian community.', 'Hate crimes against Asians have surged during the pandemic. On March 17, there was six of the eight victims killed in recent shootings in Atlanta identified as of Asian descent.']);
+    this.$speech.addBreak("500ms")
+
+    this.$speech.addText("Would you like to donate help fight this issue or find out ways you can help to stop the hate?")
+
+    return this.ask(this.$speech);
+    
+  },
+
 });
 
 

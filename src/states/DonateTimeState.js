@@ -15,14 +15,17 @@ module.exports = {
     // }
 
     if (input == null) {
+      console.log("in if")
       communityName = this.$session.$data.communityName;
       console.log("check inside else if" + JSON.stringify(this.$session.$data))
-    } else if (input != null) {
+    } else if (input.value != null) {
+      console.log("in else if")
       communityName = input.value;
     }
 
     //Get commuinities if there no session data or input
     else {
+      console.log("in else")
       // create 2 session variables
       this.$session.$data.previousState = this.getState();
       this.$session.$data.previousIntent = "DonateTimeIntent";
@@ -34,8 +37,8 @@ module.exports = {
 
     console.log("comName " + communityName)
 
-
-    this.$speech.addText(`You can donate your time to the ${communityName} community by `);
+    let community = input == "blackCommunity" ? "African American" : "Asian"
+    this.$speech.addText(`There are a lot of online events you can join to learn more about the ${community} community.`);
     let events = getAllOrganizationEvents(communityName);
     let eventsList = "";
     console.log("check " + events)
@@ -43,7 +46,7 @@ module.exports = {
 
       eventsList += events[i].name + ", "
     }
-    this.$speech.addText("Joining these upcoming events " + eventsList);
+    // this.$speech.addText("Joining these upcoming events " + eventsList);
 
 
     this.followUpState("DonateTimeState.Confirmation");
