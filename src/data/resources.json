@@ -1,59 +1,99 @@
 {
-    "blackCommunity": {
-      "organizations": [
-        {
-          "name": "@BLM",
-          "handle": "@moo",
-          "description": "stuff"
-        },
-        {
-          "name": "#StopAsianHate",
-          "handle": "@moo",
-          "description": "stuff"
-        }
-      ],
-      "lifestyleChange": [
-        "dont make assumption",
-        "teach your children",
-        "read more books"
+    "blackCommunity": 
+      {
+        "organizations": 
+        [
+          {
+            "name": "Org1",
+            "description": "desc1",
+            "handle": {
+              "twitter": "@twittername", 
+              "linkedin": "@linkedin",
+              "facebook": "@facebook"
+            },
+            "events": 
+              {
+                "name": "eventname1",
+                "description": "eventdesc1",
+                "location": "location1"
+              }
+          },
 
-      ],
-  
-      "books": [
-        {
-          "name": "BLMname1",
-          "author": "Author1",
-          "description": "stuff"
-        },
-        {
-          "name": "BLMname2",
-          "author": "Author2",
-          "description": "stuff"
-        }
-      ],
-  
-      "podcast": [
-        {
-          "name": "BLMname1",
-          "description": "stuff"
-        },
-        {
-          "name": "BLMname1",
-          "description": "stuff"
-        }
-      ],
-  
-      "movies": [
-        {
-          "name": "blackmovie1",
-          "description": "stuff"
-        },
-        {
-          "name": "blackmovie1",
-          "description": "stuff"
-        }
-      ]
-    },
+          {
+            "name": "org2",
+            "description": "desc2",
+            "handle": 
+              {
+                "twitter": "@twittername", 
+                "linkedin": "@linkedin",
+                "facebook": "@facebook"
+              },
+            "events": 
+              {
+                "name": "eventname2",
+                "description": "eventdesc2",
+                "location": "location2"
+              }
+          },
+
+          {
+            "name": "org3",
+            "description": "desc3",
+            "handle": 
+              {
+                "twitter": "@twittername", 
+                "linkedin": "@linkedin",
+                "facebook": "@facebook"
+              },
+            "events": 
+              {
+                "name": "eventname3",
+                "description": "eventdesc3",
+                "location": "location3"
+              }
+          }
+        ],
+    
+        "books": [
+          {
+            "title": "BLMname1",
+            "author": "Author1",
+            "summary": "summary1",
+            "price": 19.99
+          },
+          
+          {
+            "title": "BLMname2",
+            "author": "Author2",
+            "summary": "summary2",
+            "price": 19.99
+          },
+
+          {
+            "title": "BLMname3",
+            "author": "Author3",
+            "summary": "summary3",
+            "price": 19.99
+          }
+        ],
+    
+        "podcast": 
+          {
+            "name": "BLMname1",
+            "description": "desc1"
+          },
+    
+        "movies": [
+          {
+            "name": "blackmovie1",
+            "description": "stuff"
+          },
+          {
+            "name": "blackmovie1",
+            "description": "stuff"
+          }
+        ]
+      },
   
     "asianCommunity": {
       "organizations": [
