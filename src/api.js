@@ -1,4 +1,5 @@
 const resources = require("./data/resources.json")
+// const util = require("./util")
 //console.log("hello world")
 
 //console.log(getAllOrganizations("blackCommunity"))
@@ -19,11 +20,12 @@ const resources = require("./data/resources.json")
     function getAllOrganizations(community) {
         console.log("inside get all org names: " + community)
         console.log(JSON.stringify(resources[community]))
-        let ret = "";
+        let ret = [];
         for(i in resources[community].organizations) {
-            ret = ret + resources[community].organizations[i].name + " ";
+            ret.push(resources[community].organizations[i].name + " ");
         }
-        return ret;
+        console.log(ret)
+        return addAnd(ret);
     }
 
     //Gets the description for an organization.
@@ -89,3 +91,31 @@ const resources = require("./data/resources.json")
     //     }
     //     return "[ " + ret + "]";
     // }
+
+
+
+
+    function  addAnd (list) {
+        list = list.filter(Boolean);
+        var numberOfItems = list.length;
+    
+        if (numberOfItems == 0) {
+        return "";
+        }
+    
+        var ret = "";
+    
+        for (var i = 0; i < numberOfItems; i++) {
+        ret = ret + " ";
+        if (i == numberOfItems - 2 && !(numberOfItems <= 1)) {
+            ret = ret + list[i] + ", and";
+        } else if (numberOfItems > 1 && i != numberOfItems - 1) {
+            ret = ret + list[i] + ",";
+        } else {
+            ret = ret + list[i];
+        }
+        }
+    
+        return ret.trim();
+    }
+    

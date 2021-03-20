@@ -12,9 +12,17 @@ module.exports = {
             return this.toStateIntent(previousState, previousIntent)
         }
 
-        let community = input == "blackCommunity" ? "African American" : "Asian"
+        let community = 
+        \ == "blackCommunity" ? "Black" : "Asian"
 
-        this.ask(`Would you like to donate or would you like to learn how to help the\
+
+        if(community == "Asian" ){
+            return      this.ask(`Would you like to donate or learn about the current issues in the
+            ${community} community`)
+    
+        }
+
+        this.ask(`Would you like to donate or learn how to help the
             ${community} community`)
     }
 }

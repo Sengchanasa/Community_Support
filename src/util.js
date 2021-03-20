@@ -1,6 +1,6 @@
 
 //adds and in between lists
-module.export = {
+module.exports = {
     addAnd = (list) => {
         list = list.filter(Boolean);
         var numberOfItems = list.length;

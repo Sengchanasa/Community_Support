@@ -89,11 +89,11 @@ app.setHandler({
 
   CurrentEventIntent() {
     this.$session.$data.communityName = 'asianCommunity';
-    this.$speech.addText("This is what's going on recently in Asian community.")
-    this.$speech.addText(['On this lunar new year, several Asian restaurants in Howard County were looted and  burglarized. This is a coward act of racism against the Asian community.', 'Hate crimes against Asians have surged during the pandemic. On March 17, there was six of the eight victims killed in recent shootings in Atlanta identified as of Asian descent.']);
+    this.$speech.addText("This is what's going on recently in the Asian community.")
+    this.$speech.addText(['On this lunar new year, several Asian restaurants in Howard County were looted and  burglarized. This is a coward act of racism against the Asian community.', 'Hate crimes against Asians have surged during the pandemic. On March 17, there were 8 victims killed in recent shootings in Atlanta, 6 of them were identified as Asian descent.' ]);
     this.$speech.addBreak("500ms")
 
-    this.$speech.addText("Would you like to donate help fight this issue or find out ways you can help to stop the hate?")
+    this.$speech.addText("Would you like to donate to help fight this issue or find out ways you can help to stop the hate?")
 
     return this.ask(this.$speech);
     

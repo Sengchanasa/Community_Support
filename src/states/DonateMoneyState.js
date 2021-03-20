@@ -1,3 +1,4 @@
+const { Collection } = require("jovo-platform-googleassistant/dist/src/response/Collection");
 const { getAllOrganizations } = require("../api");
 
 module.exports = {
@@ -34,7 +35,7 @@ module.exports = {
       //Prompt for community name
 
 
-      return this.ask("Which community do you wish to donate to, black community or Asian community?")
+      return this.ask("Which community do you wish to donate to, the Black or the Asian community?")
 
     }
 
@@ -43,13 +44,14 @@ module.exports = {
       console.log(JSON.stringify(this.$inputs))
       console.log(JSON.stringify(this.$session.$data.communityName))
     }
+    console.log()
+    let community = communityName == "blackCommunity" ? "Black" : "Asian"
 
-    let community = input == "blackCommunity" ? "African American" : "Asian"
-
-    this.$speech.addText(`You can help the ${community} by donating to one of the following`);
+    this.$speech.addText(`We can help the ${community} community by donating collectively to the following organizations`);
+    this.$speech.addBreak("500ms")
     //console.log(getAllOrganizations("asianCommunity"))
     this.$speech.addText(getAllOrganizations(communityName));
-    this.$speech.addText("Would you like to donate to an organization?")
+    this.$speech.addText(". Would you like to donate to an organization?")
     this.followUpState("DonateMoneyState.Confirmation");
     this.$session.$data.previousState = this.getState();
     this.$session.$data.previousIntent = "DonateMoneyIntent";
@@ -59,7 +61,7 @@ module.exports = {
 
     YesIntent(){
 
-      this.$speech.addText("That's great! You will receive an email assoicated with your google account to complete the donation transaction using Clover.")
+      this.$speech.addText("That's great! You will receive an email associated with your Google Account to complete the donation transaction using Clover.")
       this.$speech.addBreak("300ms");
       this.$speech.addText("Would you like to hear how else you can help or donate your time?")
       this.ask(this.$speech)

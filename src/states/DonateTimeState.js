@@ -37,7 +37,7 @@ module.exports = {
 
     console.log("comName " + communityName)
 
-    let community = input == "blackCommunity" ? "African American" : "Asian"
+    let community = input == "blackCommunity" ? "Black" : "Asian"
     this.$speech.addText(`There are a lot of online events you can join to learn more about the ${community} community.`);
     let events = getAllOrganizationEvents(communityName);
     let eventsList = "";

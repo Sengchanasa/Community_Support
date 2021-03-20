@@ -1,146 +1,85 @@
 {
-    "blackCommunity": 
-      {
-        "organizations": 
-        [
-          {
-            "name": "org1",
-            "description": "desc1",
-            "handle": {
-              "twitter": "@Blklivesmatter", 
+  "blackCommunity": {
+      "organizations": [
+        {
+          "name": "Black Lives Matter",
+          "description": " BLM is a organization in US, UK, and Canada whose mission is to stop white supremacy and bring a community together to fight against the battle of injustice violence against Black communities.",
+          "handle": {
+            "twitter": "@twittername", 
+            "linkedin": "@linkedin",
+            "facebook": "@facebook"
+          },
+          "events": 
+            {
+              "name": "eventname1",
+              "description": "eventdesc1",
+              "location": "location1"
+            }
+        },
+
+        {
+          "name": "Black Alliance For Just Immigration",
+          "description": "desc2",
+          "handle": 
+            {
+              "twitter": "@twittername", 
               "linkedin": "@linkedin",
               "facebook": "@facebook"
             },
-            "events": 
-              {
-                "name": "eventname1",
-                "description": "eventdesc1",
-                "location": "location1"
-              }
-          },
-
-          {
-            "name": "org2",
-            "description": "desc2",
-            "handle": 
-              {
-                "twitter": "@twittername", 
-                "linkedin": "@linkedin",
-                "facebook": "@facebook"
-              },
-            "events": 
-              {
-                "name": "eventname2",
-                "description": "eventdesc2",
-                "location": "location2"
-              }
-          },
-
-          {
-            "name": "org3",
-            "description": "desc3",
-            "handle": 
-              {
-                "twitter": "@twittername", 
-                "linkedin": "@linkedin",
-                "facebook": "@facebook"
-              },
-            "events": 
-              {
-                "name": "eventname3",
-                "description": "eventdesc3",
-                "location": "location3"
-              }
-          }
-        ],
-    
-        "books": [
-          {
-            "title": "BLMname1",
-            "author": "Author1",
-            "summary": "summary1",
-            "price": 19.99
-          },
-          
-          {
-            "title": "BLMname2",
-            "author": "Author2",
-            "summary": "summary2",
-            "price": 19.99
-          },
-
-          {
-            "title": "BLMname3",
-            "author": "Author3",
-            "summary": "summary3",
-            "price": 19.99
-          }
-        ],
-    
-        "podcast": 
-          {
-            "name": "BLMname1",
-            "description": "desc1"
-          },
-    
-        "movies": [
-          {
-            "name": "blackmovie1",
-            "description": "stuff"
-          },
-          {
-            "name": "blackmovie1",
-            "description": "stuff"
-          }
-        ]
-      },
-  
-    "asianCommunity": {
-      "organizations": [
-        {
-          "name": "@ANZ",
-          "handle": "@moo",
-          "description": "stuff"
+          "events": 
+            {
+              "name": "Black Girls Code",
+              "description": " a mission to increase the number of black women working in computer programming. After school programs and workshops, the org plans to train one million young black women in the field by the year 2040",
+              "location": "location2"
+            }
         },
+
         {
-          "name": "#StopAsianHate",
-          "handle": "@moo",
-          "description": "stuff"
+          "name": "NAACP",
+          "description": " (National Association for the Advancement of Colored People) works to achieve racial justice for citizens in urban communities.",
+          "handle": 
+            {
+              "twitter": "@twittername", 
+              "linkedin": "@linkedin",
+              "facebook": "@facebook"
+            },
+          "events": 
+            {
+              "name": "eventname3",
+              "description": "eventdesc3",
+              "location": "location3"
+            }
         }
       ],
   
       "books": [
         {
-          "name": "ANZname1",
-          "description": "stuff",
-          "price": 19.99,
-          "tags": ["antiHate", "reform", "best seller"],
-          "author": {
-            "name": "Josh",
-            "awards": "Best Seller",
-            "Race": "Asian",
-            "Major": "Comp Sci"
-          }
+          "title": "BLMname1",
+          "author": "Author1",
+          "summary": "summary1",
+          "price": 19.99
         },
+        
         {
-          "name": "ANZname2",
-  
-          "description": "stuff",
+          "title": "BLMname2",
+          "author": "Author2",
+          "summary": "summary2",
+          "price": 19.99
+        },
+
+        {
+          "title": "BLMname3",
+          "author": "Author3",
+          "summary": "summary3",
           "price": 19.99
         }
       ],
   
-      "podcast": [
+      "podcast": 
         {
-          "name": "ANZname1",
-          "description": "stuff"
+          "name": "BLMname1",
+          "description": "desc1"
         },
-        {
-          "name": "ANZname1",
-  
-          "description": "stuff"
-        }
-      ],
   
       "movies": [
         {
@@ -152,5 +91,99 @@
           "description": "stuff"
         }
       ]
-    }
+    },
+
+  "asianCommunity": {
+    "organizations": [
+      {
+        "name": "Asian Americans Advancing Justice — Atlanta",
+        "description": " dedicated to protecting and advancing the civil rights of Asian Americans, Native Hawaiians, and Pacific Islanders (AANHPI) in Georgia and the Southeast. They help people resolve legal issues and organizes communities.",
+        "handle": {
+          "twitter": "@twittername", 
+          "linkedin": "@linkedin",
+          "facebook": "@facebook"
+        },
+        "events": 
+          {
+            "name": "eventname1",
+            "description": "eventdesc1",
+            "location": "location1"
+          }
+      },
+      {
+        "name": "Stop AAPI Hate",
+        "description": " formed in response to violence against Asian Americans during the COVID-19 pandemic. They tracks hate crimes, provides legal services to impacted communities, and advocates for civil rights. ",
+        "handle": {
+          "twitter": "@twittername", 
+          "linkedin": "@linkedin",
+          "facebook": "@facebook"
+        },
+        "events": 
+          {
+            "name": "eventname1",
+            "description": "eventdesc1",
+            "location": "location1"
+          }
+      },
+      {
+        "name": "Asian Mental Health Collective",
+        "description": " group is working to break down stigmas around mental health within the AAPI community.",
+        "handle": {
+          "twitter": "@twittername", 
+          "linkedin": "@linkedin",
+          "facebook": "@facebook"
+        },
+        "events": 
+          {
+            "name": "eventname1",
+            "description": "eventdesc1",
+            "location": "location1"
+          }
+      }
+    ],
+
+    "books": [
+      {
+        "name": "ANZname1",
+        "description": "stuff",
+        "price": 19.99,
+        "tags": ["antiHate", "reform", "best seller"],
+        "author": {
+          "name": "Josh",
+          "awards": "Best Seller",
+          "Race": "Asian",
+          "Major": "Comp Sci"
+        }
+      },
+      {
+        "name": "ANZname2",
+
+        "description": "stuff",
+        "price": 19.99
+      }
+    ],
+
+    "podcast": [
+      {
+        "name": "ANZname1",
+        "description": "stuff"
+      },
+      {
+        "name": "ANZname1",
+
+        "description": "stuff"
+      }
+    ],
+
+    "movies": [
+      {
+        "name": "asianmovie1",
+        "description": "stuff"
+      },
+      {
+        "name": "asianmovie1",
+        "description": "stuff"
+      }
+    ]
   }
+}

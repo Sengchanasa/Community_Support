@@ -30,7 +30,7 @@ module.exports = {
 
     }
 
-    let community = input == "blackCommunity" ? "African American" : "Asian"
+    let community = input == "blackCommunity" ? "Black" : "Asian"
 
     this.$speech.addText(`You can to help the ${community} by `);
     this.$speech.addText(["reading more books about that community", "teaching your children about races", "getting to know more about people in that community"]);
