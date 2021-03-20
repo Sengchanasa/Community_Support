@@ -32,8 +32,8 @@ module.exports = {
 
     let community = input == "blackCommunity" ? "Black" : "Asian"
 
-    this.$speech.addText(`You can to help the ${community} by `);
-    this.$speech.addText(["reading more books about that community", "teaching your children about races", "getting to know more about people in that community"]);
+    this.$speech.addText(`You can to help the ${community} community by `);
+    this.$speech.addText([`reading more books about the ${community} community.`, "teaching your children or talking to your parents about race.", `talking to people in the ${community} community and learning about their perspectives.`]);
       this.followUpState("LifestyleChangeState.Confirmation");
     this.$speech.addText("Would you like to donate to an organization?")
 

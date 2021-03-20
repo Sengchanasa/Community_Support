@@ -37,7 +37,7 @@ module.exports = {
 
     console.log("comName " + communityName)
 
-    let community = input == "blackCommunity" ? "Black" : "Asian"
+    let community = communityName == "blackCommunity" ? "Black" : "Asian"
     this.$speech.addText(`There are a lot of online events you can join to learn more about the ${community} community.`);
     let events = getAllOrganizationEvents(communityName);
     let eventsList = "";
@@ -60,7 +60,7 @@ module.exports = {
   Confirmation: {
 
     YesIntent() {
-      this.$speech.addText("That's great! You will receive an email assoicated with your google account to get more information about volunteering information.")
+      this.$speech.addText("That's great! You will receive an email associated with your google account to get more information about volunteering information.")
       this.$speech.addBreak("300ms");
       this.$speech.addText("Would you like to hear how else you can help or donate your money?")
       this.ask(this.$speech)

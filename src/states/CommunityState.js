@@ -12,8 +12,7 @@ module.exports = {
             return this.toStateIntent(previousState, previousIntent)
         }
 
-        let community = 
-        \ == "blackCommunity" ? "Black" : "Asian"
+        let community = input == "blackCommunity" ? "Black" : "Asian"
 
 
         if(community == "Asian" ){
