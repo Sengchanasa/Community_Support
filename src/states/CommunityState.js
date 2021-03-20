@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     CommunityIntent() {
         let input = this.$inputs.communityName.value;
         this.$session.$data.communityName = input;

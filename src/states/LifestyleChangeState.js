@@ -26,14 +26,14 @@ module.exports = {
       //Prompt for community name
 
 
-      return this.ask("What is the name of the community you want to support, black or asian?")
+      return this.ask("What is the name of the community you want to support, the Asian community or black community?")
 
     }
 
    
 
     this.$speech.addText(`You can to help the ${communityName} by `);
-    this.$speech.addText(["read more books", "teach your children", "talk to your asian friends"]);
+    this.$speech.addText(["reading more books about that community", "teaching your children about races", "getting to know more about people in that community"]);
       this.followUpState("LifestyleChangeState.Confirmation");
     this.$speech.addText("Would you like to donate to an organization?")
 
