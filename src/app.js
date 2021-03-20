@@ -8,11 +8,11 @@ const { FileDb } = require('jovo-db-filedb');
 
 
 //------------------Import external intents--------------------------
+const WelcomeState = require('./states/WelcomeState');
 const DonateTimeState = require('./states/DonatetimeState');
 const DonateMoneyState = require('./states/DonateMoneyState');
 const LifestyleChangeState = require('./states/LifestyleChangeState');
 const StoryState = require('./states/StoryState');
-
 
 
 //-------------------------------------------------------------------
@@ -39,12 +39,17 @@ app.use(
 // test
 
 app.setHandler({
+  WelcomeState,
   DonateTimeState,
   DonateMoneyState,
   LifestyleChangeState,
   StoryState,
   LAUNCH() {
     return this.toIntent('HelloWorldIntent');
+  },
+
+  WelcomeIntent(){
+    this.toStateIntent("WelcomeState", "WelcomeIntent")
   },
 
   DonateTimeIntent(){
