@@ -1,5 +1,5 @@
 
-module.export = {
+module.exports = {
     OrganizationIntent() {
         console.log("at beginning org")
         let input = this.$inputs.organizationName.value;

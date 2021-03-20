@@ -1,21 +1,29 @@
 const { getAllOrganizationEvents } = require("../api");
 
 module.exports = {
-  DonateTimeIntent(){
+  DonateTimeIntent() {
     let communityName;
-    let input = this.$inputs.communityName.value;
-    
-    if (input != null){
-      communityName = input;
-    }else if(this.$session.$data.communityName != null) {
+    let input = this.$inputs.communityName;
+
+    // if (input != undefined){
+    //   communityName = input.value;
+    // }else if(this.$session.$data.communityName != null) {
+    //   communityName = this.$session.$data.communityName;
+    //   console.log( "check inside else if"+JSON.stringify( this.$session.$data))
+
+
+    // }
+
+    if (input == null) {
       communityName = this.$session.$data.communityName;
-      console.log( "check inside else if"+JSON.stringify( this.$session.$data))
-
-
+      console.log("check inside else if" + JSON.stringify(this.$session.$data))
+    } else if (input != null) {
+      communityName = input.value;
     }
+
     //Get commuinities if there no session data or input
-    else{
-       // create 2 session variables
+    else {
+      // create 2 session variables
       this.$session.$data.previousState = this.getState();
       this.$session.$data.previousIntent = "DonateTimeIntent";
       //Prompt for community name
@@ -24,12 +32,14 @@ module.exports = {
 
     }
 
-    
+    console.log("comName " + communityName)
+
+
     this.$speech.addText(`You can donate your time to the ${communityName} community by `);
     let events = getAllOrganizationEvents(communityName);
-    let eventsList="";
+    let eventsList = "";
     console.log("check " + events)
-    for (i in events){
+    for (i in events) {
 
       eventsList += events[i].name + ", "
     }
@@ -39,19 +49,22 @@ module.exports = {
     this.followUpState("DonateTimeState.Confirmation");
 
     this.$speech.addText("Would you like me to send you the email of these events?")
-    
+
     return this.ask(this.$speech)
 
 
-  }, 
-  Confirmation:{
+  },
+  Confirmation: {
 
-    YesIntent(){
-      this.toStateIntent("WelcomeState", "WelcomeIntent")
-   
+    YesIntent() {
+      this.$speech.addText("That's great! You will receive an email assoicated with your google account to get more information about volunteering information.")
+      this.$speech.addBreak("300ms");
+      this.$speech.addText("Would you like to hear how else you can help or donate your money?")
+      this.ask(this.$speech)
+
     },
 
-    NoIntent(){
+    NoIntent() {
       this.ask("No problem!")
     }
   }

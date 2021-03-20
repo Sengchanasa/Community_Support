@@ -2,7 +2,7 @@ const resources = require("./data/resources.json")
 console.log("hello world")
 
 console.log(getAllOrganizations("blackCommunity"))
-    module.exports = {getAllOrganizations}
+    module.exports = {getAllOrganizations, getAllOrganizationEvents}
 
     //Gets organization name in database app currently supports
     function getOrganization(community, organization) {
@@ -17,7 +17,8 @@ console.log(getAllOrganizations("blackCommunity"))
     
     //Gets all organizations in database app currently supports
     function getAllOrganizations(community) {
-        //console.log("inside get all org names")
+        console.log("inside get all org names: " + community)
+        console.log(JSON.stringify(resources[community]))
         let ret = "";
         for(i in resources[community].organizations) {
             ret = ret + resources[community].organizations[i].name + " ";
