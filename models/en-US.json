@@ -64,20 +64,19 @@
 			]
     },
 
-		{
-      "name": "DonateMoneyIntent",
-      "phrases": ["DonateMoneyIntent"]
-    },
-
-
-		{
-			"name": "HelloWorldIntent",
-			"phrases": [
-				"hello",
-				"say hello",
-				"say hello world"
-			]
-		},
+	{
+		"name": "DonateMoneyIntent",
+		"phrases": ["DonateMoneyIntent {communityName}"],
+			  "inputs": [
+				  {
+					  "name": "communityName",
+					  "type": {
+						  "alexa": "communityName",
+						  "dialogflow": "communityName"
+					  }
+				  }
+			  ]
+	  },
 		{
 			"name": "MyNameIsIntent",
 			"phrases": [

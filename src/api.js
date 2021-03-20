@@ -51,7 +51,7 @@ console.log(getAllOrganizationEvents("blackCommunity"))
 
     //Gets all events that organization[organization] is in
     function getAllOrganizationEvents(community) {
-        console.log(community)
+        //console.log(community)
         let hash = {}
         let ret = []
         for (l in resources[community].organizations) {
