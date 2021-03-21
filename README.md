@@ -21,7 +21,7 @@ npm install -g jovo-cli
 Navigate to CommunitySupport folder
 
 ```
-cd Minority_Support
+cd Community_Support
 ```
 
 Start server
